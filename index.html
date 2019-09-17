@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <title>Latihan Modul 5</title>
+  </head>
+  <body>
+      <script language= "JavaScript">
+          function press()
+                  {
+                  var deret=(document.form.n.value);
+                  var angka=1;
+                  var jumlah=0.0;
+                  var faktorial=1;
+                  var hasiljumlah="";
+                  var hasilfaktorial="";
+                  var j="";
+                  var f="";
+
+                  while(angka<=deret)
+                  { jumlah=jumlah+angka; faktorial=faktorial*angka; angka++ }
+
+                  for(i=1;i<deret;i++)
+                  {
+                  hasiljumlah=hasiljumlah+i+" + ";
+                  t=hasiljumlah+""+deret+" = "+jumlah;
+
+                  hasilfaktorial=hasilfaktorial+i+" x ";
+                  f=hasilfaktorial+""+deret+" = "+faktorial;  
+                  }
+
+                  document.form.Jumlah.value=t;
+                  document.form.Faktorial.value=f;
+                  }
+</script>
+          </script>
+          <form name="form">
+        <div class="row">
+            <div class="col-8 container">
+               <h1 class="text-center header">Perhitungan Faktorial Dan Deret</h1>
+               <div class="form-group">
+                <label for="exampleInputEmail1">N</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan N" name="n">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Hasil</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Hasil" name="hasil">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Faktorial</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Faktorial" name="Faktorial">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Jumlah</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Jumlah" name="Jumlah">
+              </div>
+            <input class="btn btn-primary btnstyle" type="button" value="Submit" onclick="press()">
+            <input class="btn btn-warning btnstyle2" type="submit" value="Reset">
+            </div>
+        </div>
+      </form>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
